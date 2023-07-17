@@ -58,20 +58,72 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
-
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.Quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.text-Features{
+    color: #ff900e;
+    font-weight: 700;
+}
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
+       width: 100%;
     }
-    nav {
+    nav > ul {
         flex-direction: column;
+        }
+        .nav-1{
+            flex-direction: column;
     }
+    .banner-content{
+        width:100%;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-dis{
+     margin-left: 25px;
+   
+     }
+    }
+}
     @media screen and (min-width:576px) and (max-width:960px) {
         header{
             padding: 50px;
+          
         }
         nav {
             flex-direction: column;
         }
     
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@media screen and (max-width:576px) {
+    .teams-container{
+        flex-direction: column;
+    }
+    .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
